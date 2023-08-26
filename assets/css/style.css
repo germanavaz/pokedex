@@ -17,6 +17,13 @@ body {
 
 h1 {
     text-align: center;
+    padding-left: 3rem;
+}
+
+.buscar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #pokemonInfo {
@@ -24,7 +31,7 @@ h1 {
     align-content: center;
     width: fit-content;
     padding: .5rem 2rem;
-    margin-top: .7rem;
+    margin: .7rem auto;
     border-radius: 1rem;
 }
 
@@ -182,12 +189,24 @@ h1 {
     .pokemons {
         grid-template-columns: 1fr; 
     }
+
+}
+
+@media (max-width: 500px) {
+    h1 {
+        padding: 0;
+    }
+    .buscar {
+        gap: 1rem;
+    }
+    
 }
 
 @media (min-width: 540px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr; 
     }
+
 }
 
 @media (min-width: 900px) {
