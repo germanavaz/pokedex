@@ -19,6 +19,15 @@ h1 {
     text-align: center;
 }
 
+#pokemonInfo {
+    background-color: #f6f8fc;
+    align-content: center;
+    width: fit-content;
+    padding: .5rem 2rem;
+    margin-top: .7rem;
+    border-radius: 1rem;
+}
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -16,8 +16,10 @@ function convertPokemonToLi(pokemon) {
     <ol class="types">
     ${pokemon.types.map((type) => `<li class="type"> ${type} </li>`).join('')}
     </ol>
+
+    <a href="./pokemon.html" target="_blank"> <img src="${pokemon.photo}" alt="${pokemon.name}"></a>
     
-    <img src="${pokemon.photo}" alt="${pokemon.name}">
+    
     </div>
     </li>`
 }
@@ -35,3 +37,27 @@ loadMoreButton.addEventListener('click', () => {
     offset += limit
     loadPokemonItens(offset, limit)
 })
+
+
+function fetchPokemon() {
+    const pokemonNumber = document.getElementById('pokemonNumber').value;
+    const apiUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}/`;
+  
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const pokemonInfo = document.getElementById('pokemonInfo');
+        pokemonInfo.innerHTML = `
+          <h2>${data.name.toUpperCase()}</h2>
+          <img src="${data.sprites.front_default}" alt="${data.name}">
+          <p>Height: ${data.height / 10} m</p>
+          <p>Weight: ${data.weight / 10} kg</p>
+        `;
+      })
+      .catch(error => {
+        console.error('Erro ao buscar o Pokémon:', error);
+      });
+  }
+
+
+
