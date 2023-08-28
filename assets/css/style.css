@@ -26,6 +26,23 @@ h1 {
     align-items: center;
 }
 
+.buscar input {
+    border-radius: 1rem;
+    padding: .5rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+}
+
+.buscar button {
+    padding: .5rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+}
+
 #pokemonInfo {
     background-color: #f6f8fc;
     align-content: center;
@@ -184,6 +201,23 @@ h1 {
     border: none;
     border-radius: 1rem;
 }
+
+
+/* footer */
+footer {
+    text-align: center;
+    font-size: .8rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover {
+    color: #678fee;
+}
+
 
 @media (max-width: 400px) {
     .pokemons {
