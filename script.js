@@ -2,7 +2,7 @@
 const pokemonList = document.getElementById('pokemonList');
 const pokemonDetails = document.getElementById('pokemonDetails');
 
-const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=5'; // Change limit as needed
+const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=15'; 
 let offset = 0;
 
 async function fetchPokemonList() {
@@ -33,10 +33,12 @@ function createPokemonCard(pokemon) {
     card.classList.add('card');
     card.classList.add(pokemon.types[0].type.name); // Adiciona a classe do tipo principal
     card.innerHTML = `
-      <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
-      <p>#${pokemon.id}</p>
-      <p>${pokemon.name}</p>
-      <p>Types: ${pokemon.types.map(type => type.type.name).join(', ')}</p>
+    <div><p class="pokemon-name">${pokemon.name}</p>
+    <p class="pokemon-id">#${pokemon.id}</p>
+    </div>
+    <div>
+    <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
+    </div>
     `;
   
     card.addEventListener('click', () => showPokemonDetails(pokemon));
