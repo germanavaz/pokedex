@@ -4,7 +4,7 @@ Bem-vindo à Pokédex, sua enciclopédia Pokémon pessoal! 🚀
 
 Este repositório é uma coleção incrível de informações sobre os adoráveis Pokémon, construída com HTML, CSS e JavaScript, e alimentada pela API do Pokémon. Explore, aprenda e divirta-se!
 
-Acesse [aqui](https://germanavaz.github.io/pokedex/)!
+Acesse [aqui](https://germanavaz.github.io/pokedex/){:target="_blank"}!
 
 ## 📚 Conteúdo
 
