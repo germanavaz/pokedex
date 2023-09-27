@@ -15,7 +15,7 @@ Este repositório é uma coleção incrível de informações sobre os adorávei
 
 A Pokédex é uma ferramenta essencial para todos os treinadores Pokémon. Este projeto foi criado com o objetivo de fornecer informações detalhadas sobre todos os Pokémon conhecidos. Quer você seja um fã de longa data ou esteja apenas começando sua jornada, a Pokédex está aqui para você!
 
-! [prévia do layout do site] (assets/imagens/pokedex.png)
+![prévia do layout do site](assets/imagens/pokedex.png)
 
 ## 🚀 Recursos
 
